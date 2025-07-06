@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jr's Portfolio</title>
+    <meta property="og:title" content="Jr's Portfolio" />
+    <meta property="og:description" content="Portofolio by Jumari a.k.a Elfarabi Jr! Let's connect with me" />
+    <meta property="og:url" content="https://elfarabijr.github.io/portfolio/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/75242527?v=4" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-items" id="navItems">
+            <a href="#hero">
+                <li>About me</li>
+            </a>
+            <a href="#project">
+                <li>Project</li>
+            </a>
+            <a href="#contact">
+                <li>Contact</li>
+            </a>
+        </ul>
+
+        <button aria-label="Toggle Menu" class="burger" id="burgerBtn" title="Menu Toggle" aria-expanded="false"
+            aria-controls="navItems">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <button aria-label="Toggle Dark Mode" class="toggle-btn" id="darkModeToggle" title="Toggle Dark Mode">
+            <svg class="icon" id="themeIcon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+        </button>
+    </nav>
+
+    <section class="hero" id="hero" aria-label="Introduction">
+        <div class="intro">
+            <p class="judul"><span class="typing-base">Hi, I'm </span> <span id="typing-text"
+                    class="typing-wrapper"></span>
+            </p>
+            <h1>Code Explorer</h1>
+            <p>
+                Welcome to my personal website!
+                I'm a coding enthusiast with a focus on full-stack web development. I've worked on various LMS projects,
+                especially customizing Moodle and its mobile app.
+                Recently, I've also been exploring Flutter for mobile development.
+                <br>Always curious, always learning—I'm excited to keep growing and building cool stuff along the way.
+            </p>
+            <div class="social-hero" aria-label="Social media hero links">
+                <a href="https://github.com/elfarabijr" target="_blank" rel="noopener" aria-label="GitHub"
+                    title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.234 1.84 1.234 1.07 1.835 2.807 1.305 3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.333-5.466-5.93 0-1.31.47-2.381 1.235-3.22-.124-.304-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.243 2.872.12 3.176.77.839 1.234 1.91 1.234 3.22 0 4.608-2.807 5.625-5.48 5.92.43.37.824 1.102.824 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.217.694.825.576 4.765-1.59 8.2-6.086 8.2-11.385 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com/elfarabi17" target="_blank" rel="noopener" aria-label="Twitter"
+                    title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/jumari17" target="_blank" rel="noopener" aria-label="LinkedIn"
+                    title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <img src="./images/profile.jpg" alt="Jr's Profile" />
+    </section>
+
+    <section id="project" aria-label="Projects">
+        <h2>Projects</h2>
+        <h4 class="subtitle">Here are my highlighted projects</h4>
+        <div class="project-list">
+            <div class="project-card">
+                <div class="project-card__image-container">
+                    <img src="./images/bizmeup.png"
+                        alt="Modern responsive web application dashboard with charts and metrics"
+                        class="project-card__image">
+                </div>
+                <div class="project-card__content">
+                    <div class="project-card__tags">
+                        <span class="project-card__tag">React</span>
+                        <span class="project-card__tag">Node.js</span>
+                        <span class="project-card__tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
+                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
+                        real-time analytics, order management, and customer insights.</p>
+                    <div class="project-card__actions">
+                        <button class="project-card__btn project-card__btn--secondary">Visit</button>
+                        <!-- <button class="project-card__btn project-card__btn--primary">Live Demo</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card__image-container">
+                    <img src="./images/smile-app.png"
+                        alt="Modern responsive web application dashboard with charts and metrics"
+                        class="project-card__image">
+                </div>
+                <div class="project-card__content">
+                    <div class="project-card__tags">
+                        <span class="project-card__tag">React</span>
+                        <span class="project-card__tag">Node.js</span>
+                        <span class="project-card__tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
+                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
+                        real-time analytics, order management, and customer insights.</p>
+                    <div class="project-card__actions">
+                        <button class="project-card__btn project-card__btn--secondary">Details</button>
+                        <button class="project-card__btn project-card__btn--primary">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card__image-container">
+                    <img src="./images/bipartner.png"
+                        alt="Modern responsive web application dashboard with charts and metrics"
+                        class="project-card__image">
+                </div>
+                <div class="project-card__content">
+                    <div class="project-card__tags">
+                        <span class="project-card__tag">React</span>
+                        <span class="project-card__tag">Node.js</span>
+                        <span class="project-card__tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
+                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
+                        real-time analytics, order management, and customer insights.</p>
+                    <div class="project-card__actions">
+                        <button class="project-card__btn project-card__btn--secondary">Details</button>
+                        <button class="project-card__btn project-card__btn--primary">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card__image-container">
+                    <img src="./images/ifg-projek.png"
+                        alt="Modern responsive web application dashboard with charts and metrics"
+                        class="project-card__image">
+                </div>
+                <div class="project-card__content">
+                    <div class="project-card__tags">
+                        <span class="project-card__tag">React</span>
+                        <span class="project-card__tag">Node.js</span>
+                        <span class="project-card__tag">MongoDB</span>
+                    </div>
+                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
+                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
+                        real-time analytics, order management, and customer insights.</p>
+                    <div class="project-card__actions">
+                        <button class="project-card__btn project-card__btn--secondary">Details</button>
+                        <button class="project-card__btn project-card__btn--primary">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" aria-label="Contact">
+        <h2>Contact</h2>
+        <h4 class="subtitle">Interested in working together? Let's get in touch!</h4>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+            <span>elfarabi.jr@gmail.com</span>
+        </p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+            </svg>
+            <span>Jakarta, Indonesia</span>
+        </p>
+        <h4 class="subtitle">Feel free to ask or just to say hello<span>👋</span></h4>
+        <form onsubmit="handleSubmit(event)" aria-label="Contact form">
+            <div class="boxne">
+                <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
+                <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+            </div>
+            <textarea name="message" placeholder="Your Message" rows="3" required aria-required="true"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <span id="message-result" style="color: red; text-align: center;"></span>
+    </section>
+
+    <footer class="footer" aria-label="Social media links">
+        <p>Made with &#10084;&#65039; by. Jumari</p>
+        <div class="social-links" aria-label="Social media links">
+            <a href="https://github.com/elfarabijr" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 24 24">
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.11.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.234 1.84 1.234 1.07 1.835 2.807 1.305 3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.333-5.466-5.93 0-1.31.47-2.381 1.235-3.22-.124-.304-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.243 2.872.12 3.176.77.839 1.234 1.91 1.234 3.22 0 4.608-2.807 5.625-5.48 5.92.43.37.824 1.102.824 2.222 0 1.606-.015 2.896-.015 3.286 0 .322.217.694.825.576 4.765-1.59 8.2-6.086 8.2-11.385 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+            <a href="https://instagram.com/elfarabi17" target="_blank" rel="noopener" aria-label="Twitter"
+                title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/jumari17" target="_blank" rel="noopener" aria-label="LinkedIn"
+                title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+        </svg>
+    </button>
+
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+        const burgerBtn = document.getElementById('burgerBtn');
+        const navItems = document.getElementById('navItems');
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        const sunIcon = `
+    <circle cx="12" cy="12" r="5"/>
+    <line x1="12" y1="1" x2="12" y2="3"/>
+    <line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/>
+    <line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  `;
+        const moonIcon = `
+    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+  `;
+
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                body.classList.add('dark');
+                themeIcon.innerHTML = moonIcon;
+            } else {
+                body.classList.remove('dark');
+                themeIcon.innerHTML = sunIcon;
+            }
+        }
+
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'dark' || storedTheme === 'light') {
+            applyTheme(storedTheme);
+        } else {
+            const systemPrefDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(systemPrefDark ? 'dark' : 'light');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+
+        toggleBtn.addEventListener('click', () => {
+            const isDark = body.classList.toggle('dark');
+            if (isDark) {
+                themeIcon.innerHTML = moonIcon;
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.innerHTML = sunIcon;
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        burgerBtn.addEventListener('click', () => {
+            const expanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+            burgerBtn.setAttribute('aria-expanded', String(!expanded));
+            burgerBtn.classList.toggle('open');
+            navItems.classList.toggle('show');
+        });
+
+        navItems.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 600) {
+                    burgerBtn.setAttribute('aria-expanded', 'false');
+                    burgerBtn.classList.remove('open');
+                    navItems.classList.remove('show');
+                }
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 600) {
+                burgerBtn.setAttribute('aria-expanded', 'false');
+                burgerBtn.classList.remove('open');
+                navItems.classList.remove('show');
+            }
+        });
+
+        // form submit
+        function handleSubmit(event) {
+            event.preventDefault();
+            const resultText = `
+        <br>Sorry, this form is not connected.<br>
+        If you're really interested, feel free to contact me via 
+        <a href="mailto:elfarabi.jr@gmail.com">Email</a> or DM me on 
+        <a href="https://instagram.com/elfarabi17" target="_blank">Instagram</a>.
+      `;
+            document.getElementById('message-result').innerHTML = resultText;
+        }
+
+        // Typing animation JS
+        const typingElement = document.getElementById('typing-text');
+        const texts = ["Jumari elfara", "Jumari a.k.a Elfarabi Jr."];
+        let txtIndex = 0;
+        let charIndex = 0;
+        let typingDelay = 200;
+        let erasingDelay = 100;
+        let newTextDelay = 2000; // Delay between phrases
+        let isDeleting = false;
+
+        function type() {
+            const currentText = texts[txtIndex];
+            if (!isDeleting) {
+                // typing forward
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                if (charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(type, newTextDelay);
+                } else {
+                    setTimeout(type, typingDelay);
+                }
+            } else {
+                // deleting
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    txtIndex = (txtIndex + 1) % texts.length;
+                    setTimeout(type, typingDelay);
+                } else {
+                    setTimeout(type, erasingDelay);
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (texts.length) setTimeout(type, newTextDelay);
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
