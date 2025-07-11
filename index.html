@@ -47,8 +47,10 @@
             </svg>
         </button>
     </nav>
+    <div id="hero" style="display: hidden; visibility: hidden;">ini ada gak</div>
 
-    <section class="hero" id="hero" aria-label="Introduction">
+    <!-- hero section -->
+    <section class="hero"  aria-label="Introduction">
         <div class="intro">
             <p class="judul"><span class="typing-base">Hi, I'm </span> <span id="typing-text"
                     class="typing-wrapper"></span>
@@ -61,6 +63,8 @@
                 Recently, I've also been exploring Flutter for mobile development.
                 <br>Always curious, always learning—I'm excited to keep growing and building cool stuff along the way.
             </p>
+            <p>Connect with me: </p>
+
             <div class="social-hero" aria-label="Social media hero links">
                 <a href="https://github.com/elfarabijr" target="_blank" rel="noopener" aria-label="GitHub"
                     title="GitHub">
@@ -91,6 +95,35 @@
         <img src="./images/profile.jpg" alt="Jr's Profile" />
     </section>
 
+    <!-- tech stack -->
+     <section id="techstack" aria-label="Techstack">
+        <h2>Tech Stack</h2>
+        <h4 class="subtitle">Technologies and tools I use to build amazing digital experiences</h4>
+        <h5>Web & Mobile Development</h5>
+        <div class="info-pribadi">
+            <a href="mailto:elfarabi.jr@gmail.com">
+                <span class="button-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                    <span>Send Me Message</span>
+                </span>
+            </a>
+            <span class="button-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                </svg>
+                <span>Jakarta, Indonesia</span>
+            </span>
+        </div>
+        <h5>Tools</h5>
+    </section>
+
+    <!-- projek section -->
     <section id="project" aria-label="Projects">
         <h2>Projects</h2>
         <h4 class="subtitle">Here are my highlighted projects</h4>
@@ -103,15 +136,25 @@
                 </div>
                 <div class="project-card__content">
                     <div class="project-card__tags">
-                        <span class="project-card__tag">React</span>
-                        <span class="project-card__tag">Node.js</span>
-                        <span class="project-card__tag">MongoDB</span>
+                        <span class="project-card__tag">React Js</span>
+                        <span class="project-card__tag">Tailwind CSS</span>
                     </div>
-                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
-                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
-                        real-time analytics, order management, and customer insights.</p>
+                    <h3 class="project-card__title">BizmeUP</h3>
+                    <p class="project-card__description">
+                        BizmeUP is a web-based platform that showcases products from micro, small, and medium
+                        enterprises (MSMEs) across regions. The platform also offers supporting services such as
+                        business coaching, profile website creation, digital marketing, and advertising.
+                    </p>
                     <div class="project-card__actions">
-                        <button class="project-card__btn project-card__btn--secondary">Visit</button>
+                        <button onclick="window.open('https:\/\/bizmeup.id', '_blank')"
+                            class="project-card__btn project-card__btn--secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="12" width="12"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                            <span style="margin-left: 4px;">Details</span>
+                        </button>
                         <!-- <button class="project-card__btn project-card__btn--primary">Live Demo</button> -->
                     </div>
                 </div>
@@ -124,16 +167,27 @@
                 </div>
                 <div class="project-card__content">
                     <div class="project-card__tags">
-                        <span class="project-card__tag">React</span>
-                        <span class="project-card__tag">Node.js</span>
-                        <span class="project-card__tag">MongoDB</span>
+                        <span class="project-card__tag">Ionic</span>
+                        <span class="project-card__tag">Moodle</span>
+                        <span class="project-card__tag">Cordova</span>
                     </div>
-                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
-                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
-                        real-time analytics, order management, and customer insights.</p>
+                    <h3 class="project-card__title">Smile: Learning Platform</h3>
+                    <p class="project-card__description">
+                        This project is a customized mobile learning application based on the official Moodle Mobile
+                        app, developed using the Ionic framework. It provides seamless access to Moodle-based e-learning
+                        platforms, allowing students to view course content, submit assignments, receive notifications,
+                        and participate in discussions — all from their mobile devices.
+                    </p>
                     <div class="project-card__actions">
-                        <button class="project-card__btn project-card__btn--secondary">Details</button>
-                        <button class="project-card__btn project-card__btn--primary">Live Demo</button>
+                        <button class="project-card__btn project-card__btn--secondary"
+                            onclick="window.open('https:\/\/play.google.com/store/apps/details?id=com.sinarmas.smileapp', '_blank')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="12" width="12"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                            <span style="margin-left: 4px;">Details</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -145,16 +199,27 @@
                 </div>
                 <div class="project-card__content">
                     <div class="project-card__tags">
-                        <span class="project-card__tag">React</span>
-                        <span class="project-card__tag">Node.js</span>
-                        <span class="project-card__tag">MongoDB</span>
+                        <span class="project-card__tag">React JS</span>
+                        <span class="project-card__tag">Redux</span>
+                        <span class="project-card__tag">Material UI</span>
                     </div>
-                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
-                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
-                        real-time analytics, order management, and customer insights.</p>
+                    <h3 class="project-card__title">Bipartner</h3>
+                    <p class="project-card__description">
+                        Bipartner is a web-based dashboard designed for UMKM tenants and community partners to manage
+                        their products, profiles, and services connected to the BizmeUP ecosystem. Through this
+                        platform, users can easily add and update product listings, track performance, and access
+                        support services such as coaching and promotions.
+                    </p>
                     <div class="project-card__actions">
-                        <button class="project-card__btn project-card__btn--secondary">Details</button>
-                        <button class="project-card__btn project-card__btn--primary">Live Demo</button>
+                        <button class="project-card__btn project-card__btn--secondary"
+                            onclick="window.open('https:\/\/toko.bizmeup.id', '_blank')">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="12" width="12"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+                            </svg>
+                            <span style="margin-left: 4px;">Details</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -166,55 +231,60 @@
                 </div>
                 <div class="project-card__content">
                     <div class="project-card__tags">
-                        <span class="project-card__tag">React</span>
-                        <span class="project-card__tag">Node.js</span>
-                        <span class="project-card__tag">MongoDB</span>
+                        <span class="project-card__tag">Ionic</span>
+                        <span class="project-card__tag">Moodle</span>
+                        <span class="project-card__tag">Cordova</span>
                     </div>
-                    <h3 class="project-card__title">E-Commerce Dashboard</h3>
-                    <p class="project-card__description">A comprehensive dashboard for e-commerce businesses featuring
-                        real-time analytics, order management, and customer insights.</p>
-                    <div class="project-card__actions">
-                        <button class="project-card__btn project-card__btn--secondary">Details</button>
-                        <button class="project-card__btn project-card__btn--primary">Live Demo</button>
-                    </div>
+                    <h3 class="project-card__title">IFG Custom Moodle App</h3>
+                    <p class="project-card__description">
+                        This project is a customized mobile learning application based on the official Moodle Mobile
+                        app, developed using the Ionic framework. It provides seamless access to Moodle-based e-learning
+                        platforms, allowing students to view course content, submit assignments, receive notifications,
+                        and participate in discussions — all from their mobile devices.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- contact section -->
     <section id="contact" aria-label="Contact">
         <h2>Contact</h2>
         <h4 class="subtitle">Interested in working together? Let's get in touch!</h4>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
-                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path
-                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-            </svg>
-            <span>elfarabi.jr@gmail.com</span>
-        </p>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
-                viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path
-                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-            </svg>
-            <span>Jakarta, Indonesia</span>
-        </p>
+        <div class="info-pribadi">
+            <a href="mailto:elfarabi.jr@gmail.com">
+                <span class="button-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                    <span>Send Me Message</span>
+                </span>
+            </a>
+            <span class="button-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16"
+                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                </svg>
+                <span>Jakarta, Indonesia</span>
+            </span>
+        </div>
         <h4 class="subtitle">Feel free to ask or just to say hello<span>👋</span></h4>
-        <form onsubmit="handleSubmit(event)" aria-label="Contact form">
+        <form id="contact-form" onsubmit="handleSubmit(event)" aria-label="Contact form">
             <div class="boxne">
                 <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
                 <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
             </div>
-            <textarea name="message" placeholder="Your Message" rows="3" required aria-required="true"></textarea>
-            <button type="submit">Send</button>
+            <textarea style="resize: none;" name="message" placeholder="Your Message" rows="3" required aria-required="true"></textarea>
+            <button class="sbt-button" type="submit">Send</button>
         </form>
         <span id="message-result" style="color: red; text-align: center;"></span>
     </section>
 
     <footer class="footer" aria-label="Social media links">
-        <p>Made with &#10084;&#65039; by. Jumari</p>
+        <p>Made with 🔥 by. Me</p>
         <div class="social-links" aria-label="Social media links">
             <a href="https://github.com/elfarabijr" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="16" width="16" viewBox="0 0 24 24">
@@ -341,6 +411,8 @@
         <a href="https://instagram.com/elfarabi17" target="_blank">Instagram</a>.
       `;
             document.getElementById('message-result').innerHTML = resultText;
+            // Reset form
+            document.getElementById('contact-form').reset();
         }
 
         // Typing animation JS

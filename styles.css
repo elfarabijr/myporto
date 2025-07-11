@@ -2,14 +2,14 @@
 
 :root {
     --color-primary-dark: #21867a;
-    --color-light-bg: rgba(255 255 255 / 0.6);
+    --color-light-bg: rgba(255 255 255 / 0.85);
     --color-light-text: #333;
     --color-light-shadow: rgba(0 0 0 / 0.1);
-    --color-dark-bg: rgba(20 20 20 / 0.30);
+    --color-dark-bg: rgba(20 20 20 / 0.85);
     --color-dark-text: #ddd;
     --color-body-text-light: #5d5d5d;
     --color-body-text-dark: #bebebe;
-    --color-dark-shadow: rgba(0, 0, 0, 0.242);
+    --color-dark-shadow: rgba(0, 0, 0, 0.4);
     --transition-speed: 0.3s;
     --social-icon-size: 1.8rem;
 }
@@ -22,15 +22,39 @@ body.dark {
     background: #121212;
     color: var(--color-body-text-dark);
     transition: background var(--transition-speed), color var(--transition-speed);
+
+    h2 {
+        color: var(--color-dark-text);
+    }
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: #f0faff;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     min-height: 100vh;
     color: var(--color-body-text-light);
     transition: background var(--transition-speed), color var(--transition-speed);
+
+    button {
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: var(--color-light-text);
+        line-height: 0.8;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 1.75rem;
+        margin-top: -6px;
+        color: inherit;
+    }
+
 }
 
 nav.navbar {
@@ -231,8 +255,8 @@ section.hero p {
 
 section.hero p.judul {
     font-size: 1.8rem;
-    /* margin-top: 0.5rem; */
-    line-height: 1.2;
+    margin-top: 0.5rem;
+    line-height: 1;
     color: var(--color-primary-dark);
     font-family: 'Caveat', cursive !important;
 }
@@ -295,32 +319,16 @@ body.dark section.hero .social-hero a:hover,
     border-color: var(--color-primary-dark);
 }
 
-section#project {
+section#techstack {
     max-width: 700px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-section h4.subtitle {
-    font-size: 1.1rem;
-    line-height: 0.8rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    color: var(--color-body-text-light);
-}
-
-body.dark section h4.subtitle {
-    color: var(--color-body-text-dark);
-}
-
-section#project h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--color-light-text)
-}
-
-body.dark section#project h2 {
-    color: var(--color-dark-text);
+section#project {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 section#project .project-list {
@@ -404,17 +412,20 @@ body.dark .project-card:hover {
     font-size: 0.9rem;
     color: #6c757d;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .project-card__actions {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
 .project-card__btn {
     padding: 8px 16px;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     font-weight: 600;
     font-size: 0.875rem;
     cursor: pointer;
@@ -435,7 +446,7 @@ body.dark .project-card:hover {
 .project-card__btn--secondary {
     background: transparent;
     color: var(--color-primary-dark);
-    border: 1px solid rgba(67, 97, 238, 0.3);
+    border: 1px solid var(--color-primary-dark);
 }
 
 .project-card__btn--secondary:hover {
@@ -454,15 +465,6 @@ body.dark section#contact {
     color: var(--color-dark-text);
 }
 
-section#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-section#contact h4 {
-    line-height: normal;
-}
-
 section#contact p {
     margin: 0;
     width: 100%;
@@ -470,6 +472,35 @@ section#contact p {
     display: inline-flex;
     gap: 0.75rem;
     align-items: center;
+}
+
+.info-pribadi {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: -8px;
+}
+
+.button-contact {
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all var(--transition-speed);
+    border: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    color: var(--color-primary-dark);
+    border: 1.5px solid var(--color-primary-dark);
+}
+
+.button-contact:hover {
+    background: rgba(67, 97, 238, 0.05);
+    border-color: var(--color-primary-dark);
 }
 
 section#contact form {
@@ -511,19 +542,19 @@ section#contact textarea:focus {
     box-shadow: 0 0 8px var(--color-primary-dark);
 }
 
-section#contact button {
+section#contact .sbt-button {
     width: fit-content;
     padding: 0.75rem 1.5rem;
     background: var(--color-primary-dark);
     border: none;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-section#contact button:hover {
+section#contact .sbt-button:hover {
     /* background: var(--color-primary-dark); */
     transform: scale(1.1);
 }
